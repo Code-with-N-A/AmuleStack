@@ -1,0 +1,131 @@
+.faq-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8faff, #eef2ff);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-container {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.faq-header {
+  text-align: center;
+  max-width: 700px;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  color: #1f2937;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+.faq-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.faq-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  border-radius: 12px;
+}
+
+.faq-question:hover {
+  background: #1e40af;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  background: #f9fafc;
+}
+
+.faq-answer p {
+  padding: 15px 20px;
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+  .faq-subtitle {
+    font-size: 1rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+  .faq-answer p {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 60px 10px;
+  }
+  .faq-title {
+    font-size: 1.8rem;
+  }
+  .faq-subtitle {
+    font-size: 0.95rem;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+  .faq-answer p {
+    padding: 10px 15px;
+  }
+}

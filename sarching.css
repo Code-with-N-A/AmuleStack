@@ -1,0 +1,69 @@
+/* Center search container */
+.serch {
+  position: relative;
+  max-width: 600px; /* max-width updated */
+  margin: auto; /* center horizontally */
+  width: 200%;
+}
+
+#sarch {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: black;
+}
+
+.clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+  user-select: none;
+}
+
+.sarching-sagetion {
+  position: absolute;
+  top: 100%;
+  left: 50%; /* center relative to search bar */
+  transform: translateX(-50%); /* center align */
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 5px;
+  max-height: 250px;
+  overflow-y: auto;
+  display: none;
+  transition: all 0.3s ease;
+  width:100%;
+  max-width: 600px; /* max-width same as search bar */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  color: black;
+}
+
+.sarching-sagetion.show {
+  display: block;
+  opacity: 10;
+  transform: translateX(-50%) translateY(0);
+}
+
+.sarching-sagetion div {
+  padding: 12px 10px;
+  cursor: pointer;
+  word-break: break-word;
+  transition: background 0.2s ease;
+}
+
+.sarching-sagetion div:hover {
+  background: #f0f0f0;
+}
+
+.highlight {
+  background-color: yellow;
+  transition: background-color 0.5s ease;
+}

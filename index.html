@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="stayle.css">
+    <link rel="stylesheet" href="togel.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="sarching.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pQ6Y5x7r6e1ZlVxT0G+...REPLACE_WITH_ACTUAL_HASH..." crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+    <!-- Primary Meta Tags -->
+    <title>AmuleStack | Web Developer Portfolio & Projects</title>
+    <meta name="title" content="AmuleStack | Web Developer Portfolio & Projects">
+    <meta name="description"
+        content="AmuleStack is a personal portfolio website by a passionate web developer. Showcasing web development projects, tutorials, and resources to help you grow in your tech journey.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords"
+        content="AmuleStack, Web Development, Portfolio, Web Developer, Frontend, Backend, Projects, Full Stack, Programming, Coding, Tutorials">
+
+    <meta name="author" content="AmuleStack">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amulestack.com/">
+    <meta property="og:title" content="AmuleStack | Web Developer Portfolio & Projects">
+    <meta property="og:description"
+        content="Personal portfolio website showcasing web development projects, coding tutorials, and resources.">
+    <meta property="og:image" content="https://amulestack.com/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://amulestack.com/">
+    <meta property="twitter:title" content="AmuleStack | Web Developer Portfolio & Projects">
+    <meta property="twitter:description" content="Explore my web development portfolio and projects at AmuleStack.">
+    <meta property="twitter:image" content="https://amulestack.com/preview.png">
+
+  <!-- ============ img fevicons ====================== -->
+   <!-- Favicon for Browsers -->
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+<!-- Android / Chrome -->
+<link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+
+<!-- Apple Touch Icon (for iOS devices) -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+<!-- Microsoft Tile (optional for Windows) -->
+<meta name="msapplication-TileImage" content="img/android-chrome-192x192.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+</head>
+
+<body>
+    <div class="hed-contenor">
+        <header>
+            <div class="hed">
+                <div class="hed-togel">
+                    <div class="logo" data-aos="fade-up">
+                        <h3>AmuleStack</h3>
+                    </div>
+                    <div class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="serch">
+                    <input type="text" id="sarch" placeholder="Search...">
+                    <span class="clear">&times;</span>
+                </div>
+                <div class="sarching-sagetion"></div>
+
+                <nav class="nav" data-aos="fade-up">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a class="contect">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contenorman">
+                <div class="imgcon">
+                    <img src="img/secendM-1.png" alt="" data-aos="fade-up">
+                </div>
+                <div class="hero-text" data-aos="fade-up">
+                    <h2>Nitesh Web Development Projects</h2>
+                    <p>Explore my collection of innovative and responsive web projects designed with modern
+                        technologies.
+                        Building ideas into interactive realities.</p>
+                    <button class="Explore" data-aos="fade-up">Explore</button>
+                </div>
+            </div>
+            <div class="toggle">
+                <span class="close">&times;</span>
+                <div class="btnsSo">
+                    <button id="Contect-form">Contect Form</button>
+                    <button id="ul-form">Servis Form</button>
+                </div>
+
+                <div class="options">
+                    <button class="opt">Home</button>
+                    <button class="opt">Projects</button>
+                    <button class="opt">About-Me</button>
+                </div>
+
+                <div class="conT">
+                    <div class="heading">
+                        <h2>Contact Form</h2>
+                    </div>
+
+                    <form action="#" method="post">
+                        <p class="status-message"></p>
+                        <div class="nameInput">
+                            <div class="lebl">
+                                <label for="fname">First Name</label>
+                                <label for="lname" class="lname">Last Name</label>
+                            </div>
+                            <div class="fris_last">
+                                <input type="text" id="fname" placeholder="Enter First Name" required>
+                                <input type="text" id="lname" placeholder="Enter Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <label for="gmail">Email</label>
+                            <input type="email" id="gmail" placeholder="Enter Email" required>
+
+                            <label for="number">Phone</label>
+                            <input type="number" id="number" placeholder="Enter Phone Number" required>
+
+                            <button type="submit" class="submit">Submit</button>
+                            <p>Enter your details and <a href="primeprojects">DM Email</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="icons">
+                    <div class="socials">
+                        <a href="https://github.com/Code-with-N-A" class="social social-github" aria-label="GitHub"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/nitesh-amule-60223b34b/" class="social social-linkedin"
+                            aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA==" class="social social-instagram"
+                            aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="filter" data-aos="fade-up">
+        <h2>Web Development Projects</h2>
+        <p>Filter projects by technology and explore hands-on coding examples.</p>
+        <div class="filee_btn" data-aos="fade-up">
+            <button data-filter="all" data-aos="fade-up">All</button>
+            <button data-filter="html" data-aos="fade-up">HTML</button>
+            <button data-filter="css" data-aos="fade-up">CSS</button>
+            <button data-filter="javascript" data-aos="fade-up">JavaScript</button>
+            <button data-filter="react" data-aos="fade-up">React</button>
+        </div>
+    </div>
+    <section class="projects" id="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured Web Development Projects</h2>
+            <p>Explore real-world projects built with modern web technologies.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card html" data-aos="fade-up">
+                <img src="img/2.jpg" alt="HTML Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>HTML Form Project</h3>
+                    <p>Create responsive forms with validation using pure HTML.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag html">HTML</span>
+                        <span class="Sdate">2024</span>
+
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="#" class="btn view">View</a>
+                        <a href="#" class="btn source">Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card css" data-aos="fade-up">
+                <img src="img/2.jpg" alt="CSS Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>CSS Portfolio</h3>
+                    <p>Modern personal portfolio website styled with advanced CSS.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag css">CSS</span>
+                        <span class="Sdate">2024</span>
+
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="#" class="btn view"> View</a>
+                        <a href="#" class="btn source"> Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card js" data-aos="fade-up">
+                <img src="img/nitesh web.png" alt="JS Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>JavaScript Calculator</h3>
+                    <p>Interactive calculator app with JavaScript logic and UI.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag js">JavaScript</span>
+                        <span class="Sdate">2025</span>
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="#" class="btn view">View</a>
+                        <a href="#" class="btn source"> Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card react" data-aos="fade-up">
+                <img src="img/1.jpg" alt="React Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>React Todo App</h3>
+                    <p>Manage tasks efficiently using React state management.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag react">React</span>
+                        <span class="Sdate">2025</span>
+
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="#" class="btn view"> View</a>
+                        <a href="#" class="btn source"> Source</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====================== servises ========================= -->
+    <section class="services" id="services" data-aos="fade-up">
+        <div class="services-container" data-aos="fade-up">
+            <div class="services-header" data-aos="fade-up">
+                <h2>Our Professional Services</h2>
+                <p>We provide top-notch services to enhance your digital presence and business growth.</p>
+            </div>
+
+            <div class="services-cards" id="Web-Development" data-aos="fade-up">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon" data-aos="fade-up"><i class="fab fa-html5"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Crafting responsive and modern websites using HTML, CSS, JavaScript, and React.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon" data-aos="fade-up"><i class="fab fa-android"></i></div>
+                    <h3>Mobile Apps</h3>
+                    <p>Designing high-performance mobile applications for Android and iOS platforms.</p>
+                </div>
+
+                <div class="service-card" id="UI/UX Design" data-aos="fade-up">
+                    <div class="icon" data-aos="fade-up"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating visually appealing and user-friendly interfaces for web and mobile apps.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon" data-aos="fade-up"><i class="fas fa-search"></i></div>
+                    <h3>SEO & Marketing</h3>
+                    <p>Improving website visibility and driving targeted traffic through SEO strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========Abouts=============== -->
+
+    <section class="about" id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="about-image" data-aos="fade-up">
+                <div class="image-wrapper">
+                    <img src="img/nitesh amule.png" alt="Nitesh Amule" data-aos="fade-up">
+                    <div class="circle-bg"></div>
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+
+            <div class="about-text" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p class="tagline">Crafting modern websites with passion</p>
+                <p>
+                    Hi, I’m <span class="highlightg">Nitesh Amule</span>, a Web Developer who loves to
+                    design and build modern, responsive, and interactive websites.
+                    With expertise in <strong>HTML, CSS, JavaScript, React</strong>, I focus on creating
+                    user-friendly digital experiences.
+                </p>
+
+                <h3 data-aos="fade-up">My Skills</h3>
+                <div class="skills" data-aos="fade-up">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Responsive Design</span>
+                </div>
+
+                <div class="about-btns" data-aos="fade-up">
+                    <button class="primary-btn">View Projects</button>
+                    <button class="secondary-btn">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================FAQ Q ======================= -->
+    <section class="faq-section" id="faq-section" data-aos="fade-up">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-subtitle">Find answers to common questions about my web projects, services, and skills.
+                </p>
+            </div>
+
+            <div class="faq-items" data-aos="fade-up">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        What technologies do you use for your web projects?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I use HTML, CSS, JavaScript, React, and other modern frameworks to build responsive and
+                            interactive websites.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        Can I request a custom project or feature?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I provide custom solutions tailored to your needs, from simple websites to complex web
+                            apps.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        How can I view or download your projects?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Explore live demos in the Explore section or download the project source code directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        Do you provide support after project completion?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I provide post-project support including updates, bug fixes, and guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =================footer ===================== -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <!-- About -->
+            <div class="footer-col" data-aos="fade-up">
+                <h3 class="footer-logo">Code with N.A</h3>
+                <p>
+                    A passionate Web Developer sharing projects, tutorials, and coding
+                    resources to help you grow in your tech journey.
+                </p>
+                <div class="footer-socials" data-aos="fade-up">
+                    <a href="https://github.com/Code-with-N-A"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nitesh-amule-60223b34b/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col" data-aos="fade-up">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Explore</a></li>
+                    <li><a href="#faq-section">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-col" data-aos="fade-up">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#Web-Development">Web Development</a></li>
+                    <li><a href="#UI/UX Design">UI/UX Design</a></li>
+                    <li><a href="#">Mentorship</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col" data-aos="fade-up">
+                <h4>Contact</h4>
+                <p>Email: <a href="primeprojects.dev@gmail.com">primeprojects.dev@gmail.com</a></p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: India</p>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom" data-aos="fade-up">
+            <p>© 2025 Code with N.A | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="togel.js"></script>
+<script src="FAQ.js"></script>
+<script src="Email.js"></script>
+<script src="sarching.js"></script>
+
+</html>
