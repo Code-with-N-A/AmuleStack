@@ -67,3 +67,13 @@
   background-color: yellow;
   transition: background-color 0.5s ease;
 }
+
+/* ==============sicon start code ===================== */
+.sicon{
+ text-align: center;
+ color: black;
+ display: none;
+ font-weight: bold;
+ font-size: 22px;
+ 
+}

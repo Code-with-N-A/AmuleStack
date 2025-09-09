@@ -1,5 +1,3 @@
-
-
 /* Reset */
 * {
   margin: 0;
@@ -178,7 +176,7 @@ nav li a:hover {
 
 .hero-text button:hover {
   background-color: #faab19;
-    transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 
 }
 
@@ -190,7 +188,7 @@ nav li a:hover {
 
 .imgcon img {
   max-width: 130%;
-   max-height: 100vh;
+  max-height: 100vh;
   border-radius: 12px;
 }
 
@@ -314,6 +312,16 @@ nav li a:hover {
     padding: 10px 18px;
     font-size: 1.25rem;
   }
+
+  .serch {
+    display: none;    
+  }
+
+  .sicon {
+    display: block !important;
+
+  }
+  
 }
 
 
@@ -396,13 +404,16 @@ nav li a:hover {
   cursor: pointer;
   font-size: 18px;
   border-radius: 6px;
-  transition: all 0.3s ease;  /* smooth animation */
+  transition: all 0.3s ease;
+  /* smooth animation */
 }
 
 .filee_btn button:hover {
   background-color: rgb(80, 115, 220);
-  transform: translateY(-5px) scale(1.05); /* thoda upar aur zoom */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* shadow add */
+  transform: translateY(-5px) scale(1.05);
+  /* thoda upar aur zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* shadow add */
 }
 
 
@@ -438,18 +449,18 @@ nav li a:hover {
   background: #fff;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height:30vh;
   object-fit: cover;
 }
 
@@ -469,11 +480,13 @@ nav li a:hover {
   margin-bottom: 15px;
   color: #555;
 }
-.start{
+
+.start {
   display: flex;
   justify-content: space-between;
 }
-.Sdate{
+
+.Sdate {
   background-color: #f5f3f3;
   display: inline-block;
   padding: 5px 12px;
@@ -494,10 +507,26 @@ nav li a:hover {
   border-radius: 20px;
   margin-bottom: 15px;
 }
-.tag.html { background: #ff7043; color: #fff; }
-.tag.css { background: #42a5f5; color: #fff; }
-.tag.js { background: #fdd835; color: #000; }
-.tag.react { background: #61dafb; color: #000; }
+
+.tag.html {
+  background: #ff7043;
+  color: #fff;
+}
+
+.tag.css {
+  background: #42a5f5;
+  color: #fff;
+}
+
+.tag.js {
+  background: #fdd835;
+  color: #000;
+}
+
+.tag.react {
+  background: #61dafb;
+  color: #000;
+}
 
 /* Buttons */
 .btn-group {
@@ -521,6 +550,7 @@ nav li a:hover {
   background: linear-gradient(135deg, #6d8ff6, #3b5bdb);
   color: #fff;
 }
+
 .btn.view:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(109, 143, 246, 0.5);
@@ -532,6 +562,7 @@ nav li a:hover {
   border: 1px solid #ccc;
   color: #333;
 }
+
 .btn.source:hover {
   background: #e2e2e2;
   transform: translateY(-3px);
@@ -553,7 +584,8 @@ nav li a:hover {
   justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
-  flex-direction: row-reverse; /* PC me image right side me */
+  flex-direction: row-reverse;
+  /* PC me image right side me */
 }
 
 /* image side */
@@ -577,7 +609,7 @@ nav li a:hover {
   position: relative;
   z-index: 2;
   border: 8px solid #fff;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .circle-bg {
@@ -670,7 +702,8 @@ nav li a:hover {
   flex-wrap: wrap;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
   padding: 12px 25px;
   font-size: 1rem;
   font-weight: bold;
@@ -703,13 +736,25 @@ nav li a:hover {
 
 /* animations */
 @keyframes rotate {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes float {
-  0%,100% { transform: translateY(0);}
-  50% { transform: translateY(-20px);}
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* Responsive Design */
@@ -717,10 +762,12 @@ nav li a:hover {
 /* Tablet */
 @media (max-width: 992px) {
   .container {
-    flex-direction: column; /* tablet/mobile pe image upar text niche */
+    flex-direction: column;
+    /* tablet/mobile pe image upar text niche */
     text-align: center;
     gap: 40px;
   }
+
   .about-btns {
     justify-content: center;
   }
@@ -731,36 +778,45 @@ nav li a:hover {
   .about {
     padding: 50px 0;
   }
+
   .image-wrapper {
     width: 200px;
     height: 200px;
   }
+
   .circle-bg {
     width: 130%;
     height: 130%;
     top: -15%;
     left: -15%;
   }
+
   .gradient-overlay {
     width: 80%;
     height: 80%;
     bottom: -15%;
     right: -15%;
   }
+
   .about-text h2 {
     font-size: 1.8rem;
   }
+
   .about-text p {
     font-size: 0.9rem;
   }
+
   .skills span {
     font-size: 0.8rem;
     padding: 6px 12px;
   }
-  .primary-btn, .secondary-btn {
+
+  .primary-btn,
+  .secondary-btn {
     font-size: 0.85rem;
     padding: 10px 16px;
   }
+  
 }
 
 
@@ -809,14 +865,14 @@ nav li a:hover {
   padding: 40px 20px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
 
 .service-card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
 .service-card .icon {
@@ -870,6 +926,7 @@ nav li a:hover {
   .service-card p {
     font-size: 0.95rem;
   }
+  
 }
 
 
@@ -972,6 +1029,7 @@ nav li a:hover {
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
   }
+
   .footer-socials {
     justify-content: center;
   }
@@ -981,6 +1039,7 @@ nav li a:hover {
   .footer-container {
     grid-template-columns: 1fr;
   }
+
   .footer-col {
     margin-bottom: 30px;
   }
@@ -1020,7 +1079,7 @@ nav li a:hover {
 /* Instagram (gradient) */
 .footer-socials a:nth-child(4) {
   background: linear-gradient(45deg,
-    #feda75 0%, #f58529 30%, #dd2a7b 60%, #8134af 80%, #515bd4 100%);
+      #feda75 0%, #f58529 30%, #dd2a7b 60%, #8134af 80%, #515bd4 100%);
 }
 
 /* Hover & focus effects */
@@ -1031,7 +1090,7 @@ nav li a:hover {
 }
 
 .footer-socials a:focus {
-  outline: 3px solid rgba(0,0,0,0.15);
+  outline: 3px solid rgba(0, 0, 0, 0.15);
   outline-offset: 3px;
 }
 

@@ -1,0 +1,36 @@
+/* Icon container */
+.whatsapp-icon {
+  position: fixed;
+  right: 20px;             /* left side me fix */
+  bottom: 50px;           /* neeche thoda space */
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 9999;          /* sabse upar rahe */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+}
+
+/* Green wave animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Icon styling */
+.whatsapp-icon i {
+  font-size: 28px;
+}

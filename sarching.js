@@ -78,3 +78,24 @@ window.addEventListener("resize", () => {
 
 // Initial width
 suggestionBox.style.width = `${searchInput.offsetWidth}px`;
+
+
+// ====================== srach icons phone me so ho bash ============================
+
+let sicons = document.querySelector(".sicon");
+let srchdiv = document.querySelector(".serch");
+
+// Icon click par toggle
+sicons.addEventListener('click', () => {
+  srchdiv.classList.add('sicon');  // tumhare existing toggle
+  sicons.classList.remove('sicon')
+  sicons.el
+});
+
+// Scroll par automatically hide
+window.addEventListener('scroll', () => {
+  if (srchdiv.classList.contains('sicon')) {
+    srchdiv.classList.remove('sicon'); // scroll karte hi hide
+    sicons.classList.add('sicon')
+  }
+});

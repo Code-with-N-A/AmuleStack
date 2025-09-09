@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="togel.css">
     <link rel="stylesheet" href="FAQ.css">
     <link rel="stylesheet" href="sarching.css">
-
+    <link rel="stylesheet" href="whatsap.css">
     <!-- Latest Font Awesome 6.4.0 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
     <!-- Primary Meta Tags -->
@@ -48,21 +50,21 @@
     <meta property="twitter:description" content="Explore my web development portfolio and projects at AmuleStack.">
     <meta property="twitter:image" content="https://amulestack.com/preview.png">
 
-  <!-- ============ img fevicons ====================== -->
-   <!-- Favicon for Browsers -->
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!-- ============ img fevicons ====================== -->
+    <!-- Favicon for Browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-<!-- Android / Chrome -->
-<link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+    <!-- Android / Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
 
-<!-- Apple Touch Icon (for iOS devices) -->
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 
-<!-- Microsoft Tile (optional for Windows) -->
-<meta name="msapplication-TileImage" content="img/android-chrome-192x192.png">
-<meta name="msapplication-TileColor" content="#ffffff">
+    <!-- Microsoft Tile (optional for Windows) -->
+    <meta name="msapplication-TileImage" content="img/android-chrome-192x192.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
 
 </head>
 
@@ -71,22 +73,28 @@
         <header>
             <div class="hed">
                 <div class="hed-togel">
-                    <div class="logo" data-aos="fade-up">
+                    <div class="logo" data-aos="zoom-in">
                         <h3>AmuleStack</h3>
                     </div>
-                    <div class="toggle-btn">
+
+                    <div class="sicon" data-aos="zoom-in">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="toggle-btn" data-aos="zoom-in">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
-                <div class="serch">
+
+                <div class="serch" data-aos="zoom-in">
                     <input type="text" id="sarch" placeholder="Search...">
                     <span class="clear">&times;</span>
                 </div>
                 <div class="sarching-sagetion"></div>
 
-                <nav class="nav" data-aos="fade-up">
+                <nav class="nav" data-aos="zoom-in">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -111,14 +119,14 @@
             <div class="toggle">
                 <span class="close">&times;</span>
                 <div class="btnsSo">
-                    <button id="Contect-form">Contect Form</button>
-                    <button id="ul-form">Servis Form</button>
+                    <button id="Contect-form">Contect Us</button>
+                    <button id="ul-form">Servises</button>
                 </div>
 
                 <div class="options">
                     <button class="opt">Home</button>
                     <button class="opt">Projects</button>
-                    <button class="opt">About-Me</button>
+                    <button class="opt">About Me</button>
                 </div>
 
                 <div class="conT">
@@ -147,7 +155,11 @@
                             <input type="number" id="number" placeholder="Enter Phone Number" required>
 
                             <button type="submit" class="submit">Submit</button>
-                            <p>Enter your details and <a href="primeprojects">DM Email</a></p>
+                            <p>Enter your details and <a
+                                    href="mailto:primeprojects.dev@gmail.com?subject=Project%20Inquiry&body=Hello,%20I%20want%20to%20discuss%20a%20project%20with%20you.">
+                                    DM Email
+                                </a>
+                            </p>
                         </div>
                     </form>
                 </div>
@@ -163,8 +175,8 @@
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA==" class="social social-instagram"
-                            aria-label="Instagram" target="_blank" rel="noopener">
+                        <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA=="
+                            class="social social-instagram" aria-label="Instagram" target="_blank" rel="noopener">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -180,9 +192,9 @@
             <button data-filter="html" data-aos="fade-up">HTML</button>
             <button data-filter="css" data-aos="fade-up">CSS</button>
             <button data-filter="javascript" data-aos="fade-up">JavaScript</button>
-            <button data-filter="react" data-aos="fade-up">React</button>
         </div>
     </div>
+    
     <section class="projects" id="projects">
         <div class="section-header" data-aos="fade-up">
             <h2>Featured Web Development Projects</h2>
@@ -190,9 +202,9 @@
         </div>
 
         <div class="projects-grid">
-            <!-- Project 1 -->
+            <!-- HTML 1 -->
             <div class="project-card html" data-aos="fade-up">
-                <img src="img/2.jpg" alt="HTML Project">
+                <img src="img/Marks.png" alt="HTML Project">
                 <div class="content" data-aos="fade-up">
                     <h3>HTML Form Project</h3>
                     <p>Create responsive forms with validation using pure HTML.</p>
@@ -202,15 +214,17 @@
 
                     </div>
                     <div class="btn-group" data-aos="fade-up">
-                        <a href="#" class="btn view">View</a>
-                        <a href="#" class="btn source">Source</a>
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_webdevelopment-html-css-activity-7363797106236563456-4XZW?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view">View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/MarksCounter.html"
+                            class="btn source">Source</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- CSS 2 -->
             <div class="project-card css" data-aos="fade-up">
-                <img src="img/2.jpg" alt="CSS Project">
+                <img src="img/Marks.png" alt="CSS Project">
                 <div class="content" data-aos="fade-up">
                     <h3>CSS Portfolio</h3>
                     <p>Modern personal portfolio website styled with advanced CSS.</p>
@@ -220,46 +234,89 @@
 
                     </div>
                     <div class="btn-group" data-aos="fade-up">
-                        <a href="#" class="btn view"> View</a>
-                        <a href="#" class="btn source"> Source</a>
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_webdevelopment-html-css-activity-7363797106236563456-4XZW?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view"> View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/MarksCounter.html"
+                            class="btn source"> Source</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card js" data-aos="fade-up">
-                <img src="img/nitesh web.png" alt="JS Project">
+            <!--JAVASCRIPT 3 -->
+            <div class="project-card javascript" data-aos="fade-up">
+                <img src="img/MCQZ.png" alt="JS Project">
                 <div class="content" data-aos="fade-up">
-                    <h3>JavaScript Calculator</h3>
-                    <p>Interactive calculator app with JavaScript logic and UI.</p>
+                    <h3>JavaScript MCQZ</h3>
+                    <p>Interactive MCQZ with JavaScript logic and UI.</p>
                     <div class="start" data-aos="fade-up">
                         <span class="tag js">JavaScript</span>
                         <span class="Sdate">2025</span>
                     </div>
                     <div class="btn-group" data-aos="fade-up">
-                        <a href="#" class="btn view">View</a>
-                        <a href="#" class="btn source"> Source</a>
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_webdevelopment-javascript-frontenddevelopment-activity-7366002387557253120-0ZB4?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view">View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/mcqz.html" class="btn source">
+                            Source</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 4 -->
-            <div class="project-card react" data-aos="fade-up">
-                <img src="img/1.jpg" alt="React Project">
+            <!--JAVASCRIPT 3 -->
+            <div class="project-card javascript" data-aos="fade-up">
+                <img src="img/ATM.png" alt="JS Project">
                 <div class="content" data-aos="fade-up">
-                    <h3>React Todo App</h3>
-                    <p>Manage tasks efficiently using React state management.</p>
+                    <h3>JavaScript ATM</h3>
+                    <p>Interactive ATM with JavaScript logic and UI.</p>
                     <div class="start" data-aos="fade-up">
-                        <span class="tag react">React</span>
+                        <span class="tag js">JavaScript</span>
                         <span class="Sdate">2025</span>
-
                     </div>
                     <div class="btn-group" data-aos="fade-up">
-                        <a href="#" class="btn view"> View</a>
-                        <a href="#" class="btn source"> Source</a>
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_atmsimulator-javascript-html-activity-7364908004040749057-P026?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view">View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/ATM.html" class="btn source">
+                            Source</a>
                     </div>
                 </div>
             </div>
+            <!--JAVASCRIPT 3 -->
+            <div class="project-card javascript" data-aos="fade-up">
+                <img src="img/Voting.png" alt="JS Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>JavaScript Voting</h3>
+                    <p>Interactive Voting with JavaScript logic and UI.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag js">JavaScript</span>
+                        <span class="Sdate">2025</span>
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_webdevelopment-javascript-html-activity-7362453616437137408-HmrW?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view">View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/voting.html"
+                            class="btn source"> Source</a>
+                    </div>
+                </div>
+            </div>
+            <!--JAVASCRIPT 3 -->
+            <div class="project-card javascript" data-aos="fade-up">
+                <img src="img/binary.png" alt="JS Project">
+                <div class="content" data-aos="fade-up">
+                    <h3>JavaScript Binary Number</h3>
+                    <p>Interactive Binary Number with JavaScript logic and UI.</p>
+                    <div class="start" data-aos="fade-up">
+                        <span class="tag js">JavaScript</span>
+                        <span class="Sdate">2025</span>
+                    </div>
+                    <div class="btn-group" data-aos="fade-up">
+                        <a href="https://www.linkedin.com/posts/nitesh-amule-60223b34b_coding-programming-developerlife-activity-7363127252827389952-PUYm?utm_source=share&utm_medium=member_android&rcm=ACoAAF3uemgBRd92sKKr4NQGfl5yQUk212DoHuM"
+                            class="btn view">View</a>
+                        <a href="https://github.com/Code-with-N-A/AllProjects/blob/master/binary.html"
+                            class="btn source"> Source</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rect 4 -->
+
 
         </div>
     </section>
@@ -396,14 +453,17 @@
         </div>
     </section>
 
-
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon" data-aos="zoom-in">
+        <i class="fab fa-whatsapp"></i>
+    </div>
 
     <!-- =================footer ===================== -->
     <footer class="footer" data-aos="fade-up">
         <div class="footer-container">
             <!-- About -->
             <div class="footer-col" data-aos="fade-up">
-                <h3 class="footer-logo">Code with N.A</h3>
+                <h3 class="footer-logo">Nitesh Amule</h3>
                 <p>
                     A passionate Web Developer sharing projects, tutorials, and coding
                     resources to help you grow in your tech journey.
@@ -411,7 +471,8 @@
                 <div class="footer-socials" data-aos="fade-up">
                     <a href="https://github.com/Code-with-N-A"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/nitesh-amule-60223b34b/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/primeprojects74?igsh=MWw0cTdnbDUxamcxaA=="><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -441,15 +502,19 @@
             <!-- Contact -->
             <div class="footer-col" data-aos="fade-up">
                 <h4>Contact</h4>
-                <p>Email: <a href="primeprojects.dev@gmail.com">primeprojects.dev@gmail.com</a></p>
-                <p>Phone: +91 98765 43210</p>
+                <p>Email: <a
+                        href="mailto:primeprojects.dev@gmail.com?subject=Project%20Inquiry&body=Hello,%20I%20want%20to%20discuss%20a%20project%20with%20you.">
+                        primeprojects.dev@gmail.com
+                    </a>
+                </p>
+                <p>Phone: +91 9303546247</p>
                 <p>Location: India</p>
             </div>
         </div>
 
         <!-- Bottom -->
         <div class="footer-bottom">
-            <p>© 2025 Code with N.A | All Rights Reserved</p>
+            <p>© 2025Nitesh Amule | All Rights Reserved</p>
         </div>
     </footer>
 
@@ -461,5 +526,6 @@
 <script src="FAQ.js"></script>
 <script src="Email.js"></script>
 <script src="sarching.js"></script>
+<script src="whatsap.js"></script>
 
 </html>
