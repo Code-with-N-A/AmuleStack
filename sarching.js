@@ -28,7 +28,7 @@ searchInput.addEventListener("input", () => {
         .map(item => `<div>${item}</div>`)
         .join("");
       suggestionBox.classList.add("show");
-      
+
     } else {
       suggestionBox.innerHTML = `<div>No result found</div>`;
       suggestionBox.classList.add("show");
@@ -99,3 +99,10 @@ window.addEventListener('scroll', () => {
     sicons.classList.add('sicon')
   }
 });
+
+let contenorman = document.querySelector(".contenorman");
+contenorman.addEventListener('click', () => {
+  srchdiv.classList.remove('sicon'); // scroll karte hi hide
+  sicons.classList.add('sicon')
+
+})

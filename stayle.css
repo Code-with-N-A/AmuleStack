@@ -5,25 +5,18 @@
   box-sizing: border-box;
 }
 
-/* Horizontal scrollbar hide karne ke liye */
 body {
   overflow-x: hidden;
-  /* Horizontal scroll hide */
 }
 
-/* Vertical scrollbar ko visually hide karne ke liye (scrollable rahega) */
 body::-webkit-scrollbar {
   width: 0px;
-  /* Chrome, Safari */
   background: transparent;
-  /* Optional */
 }
 
 body {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 
@@ -320,6 +313,7 @@ nav li a:hover {
   .sicon {
     display: block !important;
 
+
   }
   
 }
@@ -460,9 +454,12 @@ nav li a:hover {
 
 .project-card img {
   width: 100%;
-  height:30vh;
-  object-fit: cover;
+  height: 30vh;       
+  object-fit: contain; /* पूरी image दिखाई देगी, कोई crop नहीं होगा */
+  background-color: #ffffff; 
+  padding: 5px; 
 }
+
 
 .project-card .content {
   padding: 20px;
@@ -1004,6 +1001,7 @@ nav li a:hover {
 .footer-col p a {
   color: #3b82f6;
   text-decoration: none;
+  overflow: auto;
 }
 
 .footer-col p a:hover {
