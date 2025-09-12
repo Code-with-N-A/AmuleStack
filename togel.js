@@ -10,7 +10,7 @@ let serbtn = document.querySelector("#ul-form")
 // phone togel btn
 let phon_T = document.querySelector(".toggle-btn")
 phon_T.addEventListener('click', () =>{
-    togelform.classList.toggle("toggle-active")
+    togelform.classList.add("toggle-active")
     phon_T.classList.remove("toggle-btn");
 
 })

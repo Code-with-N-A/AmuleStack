@@ -74,13 +74,15 @@ form.addEventListener('submit', async (e) => {
         })
 
         if (!res.ok) throw new Error('Failed to send');
-
-        statusMessage.innerHTML = '✔️ Message sent successfully!';
+        statusMessage.innerHTML = 'Message sent successfully!';
         statusMessage.style.color = 'green';
         form.reset();
 
         setTimeout(() => {
             statusMessage.textContent = '';
+            togelform.classList.remove("toggle-active");
+            phon_T.classList.add("toggle-btn");
+
         }, 3000)
 
 
