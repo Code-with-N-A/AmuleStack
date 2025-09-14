@@ -1,8 +1,19 @@
-let whatsap = document.querySelector(".whatsapp-icon");
 
-whatsap.addEventListener('click', () => {
-  let phone = "919303546247";  
-  let message = "Hello, I want to connect with you!";
-  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
+document.addEventListener("DOMContentLoaded", function () {
+  const socialContainer = document.querySelector(".social-icons");
+  const globeIcon = document.querySelector(".social-icons .main-icon");
+
+  globeIcon.addEventListener("click", function (e) {
+    e.stopPropagation();
+    socialContainer.classList.toggle("active");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!socialContainer.contains(e.target)) {
+      socialContainer.classList.remove("active");
+    }
+  });
+ 
 });
+

@@ -21,7 +21,7 @@ Feedback.addEventListener('submit', async (e) => {
     };
 
     try {
-        const res = await fetch('https://formsubmit.co/ajax/primeprojects.dev@gmail.com', {
+        const res = await fetch('https://formsubmit.co/ajax/amulestack93@gmail.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),

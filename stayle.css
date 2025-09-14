@@ -1096,3 +1096,6 @@ nav li a:hover {
 html {
   scroll-behavior: smooth;
 }
+.footer-col{
+  overflow: auto;
+}

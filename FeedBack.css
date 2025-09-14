@@ -57,8 +57,8 @@
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  background-color: #e6e4f2;
-  color: #010147;
+  background-color: #3790fd;
+  color: #ffffff;
   padding: 18px 26px;
   border-radius: var(--radius) var(--radius) 0 0;
   box-shadow: 0 4px 18px rgba(37,99,235,0.08);
@@ -79,7 +79,7 @@
   margin: 6px 0 0;
   font-size: 0.95rem;
   opacity: 0.95;
-  color: rgba(40, 2, 100, 0.92);
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.35;
 }
 
@@ -183,7 +183,7 @@
   padding: 14px 16px;
   border: none;
   border-radius: 10px;
-  background-color: #3e67fc;
+  background-color: #efe70c;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
@@ -194,7 +194,7 @@
 
 /* hover & active */
 .feedback-btn:hover{
-  background-color: #214ff7;
+  background-color: #eac210;
   transform: translateY(-3px);
   box-shadow: 0 14px 34px rgba(37,99,235,0.08);
 }
