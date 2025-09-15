@@ -1,14 +1,14 @@
 /* ===========================
-   MAIN CONTAINER
+   MAIN CONTAINER (Responsive)
 =========================== */
 .social-icons {
   position: fixed;
-  right: 20px;
-  bottom: 50px;
+  right: clamp(10px, 2vw, 20px); /* auto adjust right space */
+  bottom: calc(clamp(15px, 4vh, 50px) + env(safe-area-inset-bottom, 0px)); /* iPhone safe-area support */
   background-color: #333;
   color: white;
-  font-size: 28px;
-  padding: 15px;
+  font-size: clamp(20px, 3vw, 28px); /* responsive icon size */
+  padding: clamp(10px, 2.5vw, 15px);
   border-radius: 50%;
   z-index: 9999;
   cursor: pointer;
@@ -20,7 +20,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Pulse Animation (globe glow effect) */
+/* Pulse Animation */
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
@@ -33,34 +33,33 @@
   }
 }
 
-/* Rotate globe when active */
+/* Active state */
 .social-icons.active {
-  background-color: #0a74da; /* active color */
+  background-color: #0a74da;
   transform: rotate(20deg) scale(1.05);
 }
 
-/* Main globe icon style */
 .social-icons .main-icon {
-  font-size: 28px;
+  font-size: clamp(20px, 3vw, 28px);
 }
 
 /* ===========================
-   SOCIAL ITEMS (HIDDEN BY DEFAULT)
+   SOCIAL ITEMS (Responsive)
 =========================== */
 .items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(6px, 1.5vw, 10px);
   position: absolute;
-  bottom: 70px;
+  bottom: calc(100% + 10px);
   right: 0;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(10px);
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
-/* Show items when .active class is present */
+/* Show items on active */
 .social-icons.active .items {
   opacity: 1;
   transform: translateY(0);
@@ -74,17 +73,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: clamp(40px, 8vw, 50px);
+  height: clamp(40px, 8vw, 50px);
   border-radius: 50%;
   color: white;
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
 }
 
-/* Hover effect */
 .items a:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -96,18 +94,39 @@
 .items a.whatsapp {
   background-color: #25d366;
 }
-
 .items a.instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-
 .items a.linkedin {
   background-color: #0077b5;
 }
-
 .items a.youtube {
   background-color: #ff0000;
 }
 .items a.github {
   background-color: #000000;
+}
+
+/* ===========================
+   MEDIA QUERIES FOR EXTRA SAFETY
+=========================== */
+
+/* Small phones (≤ 400px) → icons thode aur chhote */
+@media (max-width: 400px) {
+  .items a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Tablets & landscape screens → thoda spacing zyada */
+@media (min-width: 768px) {
+  .social-icons {
+    right: 30px;
+    bottom: 60px;
+  }
+  .items {
+    gap: 12px;
+  }
 }
