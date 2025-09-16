@@ -13,7 +13,7 @@ const detailsData = {
 };
 
 cards.forEach(card => {
-    card.addEventListener("mouseenter", () => {
+    card.addEventListener("click", () => {
         const key = card.dataset.key;
         skillDetails.innerHTML = `<p>${detailsData[key]}</p>`;
     });
