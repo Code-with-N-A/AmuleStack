@@ -1,6 +1,7 @@
 const searchInput = document.getElementById("sarch");
 const clearBtn = document.querySelector(".clear");
 const suggestionBox = document.querySelector(".sarching-sagetion");
+const sicon = document.querySelector(".sicon")
 
 // Collect all text elements on page
 const textElements = Array.from(document.body.querySelectorAll('p, h1, h2, h3, li, span, a'));
@@ -106,3 +107,8 @@ contenorman.addEventListener('click', () => {
   sicons.classList.add('sicon')
 
 })
+
+// ================= clik karne par sarch ke icon par kebord open karne ka mak karta hey ====================
+sicon.addEventListener("click", () => {
+  searchInput.focus();  //  keyboard open hoga mobile pe
+});

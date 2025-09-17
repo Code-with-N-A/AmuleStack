@@ -200,8 +200,8 @@ nav li a:hover {
 }
 
 .imgcon img {
-  max-width: 100%;
-  max-height: 100vh;
+  max-width: 90%;
+  max-height: 90vh;
   border-radius: 12px;
 }
 

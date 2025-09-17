@@ -12,6 +12,9 @@
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     transform: translateX(100%);
+     box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     transition: transform 0.5s ease;
 }
 
@@ -129,29 +132,6 @@ form {
     display: none;
 }
 
-.opt {
-    padding: 12px 12px;
-    border: none;
-    background-color: rgb(76, 159, 236);
-    color: rgb(255, 255, 255);
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.5s ease, color 0.5s ease;
-    font-weight: bold;
-}
-
-.opt:hover {
-    background-color: rgb(80, 88, 240);
-    color: #ffffff;
-}
-
-.btnsSo {
-    display: flex;
-    gap: 90px;
-    padding: 10px;
-    justify-content: center;
-}
 
 #Contect-form {
     font-size: 15px;
@@ -185,10 +165,6 @@ form {
 
 }
 
-.conT {
-    display: none;
-}
-
 .contect-s {
     display: block;
     justify-content: center;
@@ -196,9 +172,7 @@ form {
 
 }
 
-.activB {
-    background-color: #69bbfa;
-}
+
 
 
 /* sosal midya icons  */
@@ -253,26 +227,6 @@ form {
   outline-offset: 3px;
 }
 
-
-
-@media (min-width: 1024px){
-    .options,.btnsSo{
-        display: none;
-    }
-    .conT{
-        display: block;
-    }
-}
-
-@media (min-width: 768px){
-    
-     .options,.btnsSo{
-        display: none;
-    }
-    .conT{
-        display: block;
-    }
-}
 
 
 @media (max-width: 480px) {

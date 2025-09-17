@@ -1,0 +1,145 @@
+/* Container */
+.projectsMAN {
+    display: flex;
+    flex-direction: row;
+    /* desktop side by side */
+    gap: 20px;
+    height: 100vh;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+/* Filter Section */
+.filter {
+    width: 420px;
+    /* chhota column */
+    flex-shrink: 0;
+    background: #a3d3f7;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    /* desktop me full height */
+}
+
+.projects-heading {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+    text-align: left;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projects-heading li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.projects-heading li strong {
+    display: block;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background 0.3s;
+    color: #4f5eff;
+    font-family: sans-serif;
+}
+
+.projects-heading li strong:hover {
+    color: rgb(1, 10, 113);
+
+}
+
+.projects-heading ul li:hover strong {
+    background: #ddd;
+}
+
+
+.filter::-webkit-scrollbar {
+    display: none;
+}
+
+/* Projects Section */
+.projectsWidt {
+    flex: 1;
+    /* baki space le lega */
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 10px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.projectsWidt::-webkit-scrollbar {
+    display: none;
+}
+
+/* Project Cards Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.filter1{
+    display: none;
+}
+
+/* ---------- Responsive (Mobile / Tablet) ---------- */
+@media (max-width: 768px) {
+    .projectsMAN {
+        flex-direction: column;
+        /* stack vertically */
+        height: auto;
+    }
+
+    .filter {
+        width: 100%;
+        height: auto;
+        /* auto height */
+        margin-bottom: 15px;
+        overflow-y: visible;
+        /* scroll remove */
+    }
+
+    .projectsWidt {
+        height: auto;
+        /* auto height */
+        overflow-y: visible;
+    }
+
+    .projects-heading {
+        display: none;
+    }
+
+    .filter {
+        background: none;
+        display: none;
+    }
+    .filter1{
+        display: block;
+    }
+    .filee_btn button{
+       padding: 10px;
+       background-color: #4fb3ff;
+       font-weight: bold;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       margin-bottom: 10px;
+    }
+}

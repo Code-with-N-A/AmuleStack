@@ -3,6 +3,8 @@
 const form = document.querySelector('form');
 const submitBtn = document.querySelector('.submit');
 const statusMessage = form.querySelector('.status-message');
+const togels = document.querySelector(".toggle");
+
 
 
 
@@ -80,8 +82,7 @@ form.addEventListener('submit', async (e) => {
 
         setTimeout(() => {
             statusMessage.textContent = '';
-            togelform.classList.remove("toggle-active");
-            phon_T.classList.add("toggle-btn");
+            togels.classList.remove('toggle-active');
 
         }, 3000)
 
