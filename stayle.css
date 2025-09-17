@@ -30,20 +30,40 @@ body {
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     /* Dark overlay */
-    url("img/nitesh web.png") center/cover no-repeat;
+    url("img/pexels-damir-mijailovic-1921088-5212756.jpg") center/cover no-repeat;
 }
 
 
-/* Header wrapper */
+/* Header wrapper - Transparent with frosted glass effect */
 .hed {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 15px 30px;
-  position: relative;
-  background-color: #fff;
+  position: fixed;
+  /* fixed header */
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  /* semi-transparent white */
+  backdrop-filter: blur(10px);
+  /* blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  /* subtle border */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
+
+/* Optional: scroll par thoda opaque */
+.hed.scrolled {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+}
+
 
 .hed-togel {
   display: flex;
@@ -129,7 +149,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 75vh;
+  height: 90vh;
   padding: 0 60px;
   color: white;
   position: relative;
@@ -180,7 +200,7 @@ nav li a:hover {
 }
 
 .imgcon img {
-  max-width: 130%;
+  max-width: 100%;
   max-height: 100vh;
   border-radius: 12px;
 }
@@ -235,6 +255,7 @@ nav li a:hover {
   .serch {
     width: 80%;
   }
+
 }
 
 /* Mobiles */
@@ -281,6 +302,7 @@ nav li a:hover {
   .imgcon img {
     max-width: 90%;
   }
+
 }
 
 /* Extra Small (<=480px) */
@@ -291,6 +313,7 @@ nav li a:hover {
 
   .imgcon img {
     max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .hero-text h2 {
@@ -307,7 +330,7 @@ nav li a:hover {
   }
 
   .serch {
-    display: none;    
+    display: none;
   }
 
   .sicon {
@@ -315,7 +338,7 @@ nav li a:hover {
 
 
   }
-  
+
 }
 
 
@@ -454,10 +477,11 @@ nav li a:hover {
 
 .project-card img {
   width: 100%;
-  height: 30vh;       
-  object-fit: contain; /* पूरी image दिखाई देगी, कोई crop नहीं होगा */
-  background-color: #ffffff; 
-  padding: 5px; 
+  height: 30vh;
+  object-fit: contain;
+  /* पूरी image दिखाई देगी, कोई crop नहीं होगा */
+  background-color: #ffffff;
+  padding: 5px;
 }
 
 
@@ -813,7 +837,7 @@ nav li a:hover {
     font-size: 0.85rem;
     padding: 10px 16px;
   }
-  
+
 }
 
 
@@ -923,7 +947,7 @@ nav li a:hover {
   .service-card p {
     font-size: 0.95rem;
   }
-  
+
 }
 
 
@@ -1096,6 +1120,7 @@ nav li a:hover {
 html {
   scroll-behavior: smooth;
 }
-.footer-col{
+
+.footer-col {
   overflow: auto;
 }

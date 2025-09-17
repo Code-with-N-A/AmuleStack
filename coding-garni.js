@@ -19,14 +19,21 @@ cards.forEach(card => {
     });
 });
 
-// Certificate buttons open in new window
+// Certificate buttons open in a new tab/window
 const certButtons = document.querySelectorAll(".cert-btn");
+
 certButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        const url = btn.dataset.url;
-        window.open(url, "_blank", "width=900,height=700");
+    btn.addEventListener("click", (e) => {
+        e.preventDefault(); // prevent default behavior
+        const url = btn.dataset.url; // URL of certificate
+        if(url) {
+            window.open(url, "_blank", "noopener,noreferrer,width=900,height=700");
+        } else {
+            console.warn("Certificate URL not found for button:", btn);
+        }
     });
 });
+
 
 // Profile and background image click open full-size
 document.querySelector(".profile-img").addEventListener("click", () => {
