@@ -51,3 +51,16 @@ window.addEventListener('load', () => {
         allBtn.click();
     }
 });
+
+// =============== Explor click scroll ==================
+// Select button
+const exploreBtn = document.querySelector('.Explore');
+
+// Click event
+exploreBtn.addEventListener('click', () => {
+  const target = document.querySelector('.projectsWidt');
+  target.scrollIntoView({ behavior: 'smooth' }); // smooth scroll
+});
+
+
+

@@ -84,6 +84,7 @@ body {
   background-clip: text;
   color: transparent;
   letter-spacing: 2px;
+
 }
 
 
@@ -161,9 +162,11 @@ nav li a:hover {
 .hero-text {
   flex: 1;
   max-width: 600px;
+  text-shadow: 2px 2px 4px rgb(52, 6, 237);
+
 }
 
-.hero-text h2 {
+.hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -210,15 +213,16 @@ nav li a:hover {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-}
+ }
 
 .toggle-btn span {
   width: 25px;
   height: 3px;
-  background: black;
+  background: rgb(0, 0, 0);
   border-radius: 2px;
   transition: all 0.3s ease;
-  color: black;
+  /* color: #000000; */
+  color: #000000;
 }
 
 .toggle-btn.active span:nth-child(1) {
@@ -233,33 +237,14 @@ nav li a:hover {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
+/* ================== RESPONSIVE DESIGN ================== */
 
-/* Tablets */
-@media (max-width: 900px) {
-  .contenorman {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    height: auto;
+/* ====== Extra Small Devices (mobiles <480px) ====== */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
   }
 
-  .hero-text {
-    margin-bottom: 30px;
-  }
-
-  .imgcon img {
-    max-width: 70%;
-  }
-
-  .serch {
-    width: 80%;
-  }
-
-}
-
-/* Mobiles */
-@media (max-width: 768px) {
   .hed {
     flex-wrap: wrap;
     padding: 10px 15px;
@@ -269,7 +254,7 @@ nav li a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     position: absolute;
     top: 60px;
     right: 15px;
@@ -287,106 +272,225 @@ nav li a:hover {
   }
 
   .serch {
-    width: 100%;
+    display: none;
+    /* mobile me search hide */
+  }
+
+  .sicon {
+    display: block !important;
+    /* search icon dikhe */
+  }
+
+  .contenorman {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
     margin-top: 10px;
   }
 
-  .hero-text h2 {
-    font-size: 1.8rem;
+  .hero-text button {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .imgcon img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* ====== Small to Medium Devices (mobiles + small tablets 481px - 768px) ====== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contenorman {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    height: auto;
+  }
+
+  .hero-text {
+    margin-bottom: 25px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  .hero-text button {
+    padding: 12px 18px;
+    font-size: 1.1rem;
+  }
+
+  .imgcon img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .serch {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+}
+
+/* ====== Mobiles (up to 768px) ====== */
+@media (max-width: 768px) {
+  .contenorman {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
   }
 
   .hero-text p {
     font-size: 1rem;
   }
 
-  .imgcon img {
-    max-width: 90%;
-  }
-
-}
-
-/* Extra Small (<=480px) */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .imgcon img {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .hero-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-  }
-
   .hero-text button {
+    font-size: 1.2rem;
     padding: 10px 18px;
-    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+
+  .imgcon img {
+    max-width: 85%;
   }
 
   .serch {
-    display: none;
+    width: 100%;
   }
-
-  .sicon {
-    display: block !important;
-
-
-  }
-
 }
 
-
-/* ================= RESPONSIVE DESIGN ================= */
-
-/* Tablets / iPads */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* ====== Tablet Range (769px - 992px) ====== */
+@media (min-width: 769px) and (max-width: 992px) {
   .contenorman {
     flex-direction: column;
-    /* column layout */
-    text-align: center;
-    padding: 30px 20px;
-    height: auto;
-  }
-
-  .imgcon {
-    order: 1;
-    /* image pehle aaye */
-    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
   }
 
   .hero-text {
-    order: 2;
-    /* text aur button niche aaye */
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-top: 0px;
   }
 
-  .hero-text h2 {
-    font-size: 2rem;
-    /* heading thodi chhoti ho jaye */
+  /* Default tablet style (larger text) */
+  .hero-text h1 {
+    font-size: 7.5rem;
+    text-align: center;
   }
 
   .hero-text p {
-    font-size: 1.1rem;
+    font-size: 2.6rem;
+    text-align: center;
   }
 
   .hero-text button {
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 12px 22px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .imgcon img {
+    display: none;
+  }
+
+  .serch {
+    width: 70%;
+  }
+}
+
+/* ====== Special Case: Phone in Desktop Mode (980px fake width) ====== */
+@media (min-width: 769px) and (max-width: 992px) and (max-device-width: 480px) {
+  .hero-text h1 {
+    font-size: 10rem;   /* chhota text for phone desktop mode */
+   margin-bottom: 50px;
+  }
+
+  .hero-text p {
+    font-size: 4rem;
+     margin-bottom: 10%;
+
+  }
+
+  .hero-text button {
+    font-size: 5rem;
+    padding: 8px 16px;
+    margin-bottom: 30%;
+
+  }
+   .serch {
+    width: 70%;
+  }
+}
+
+/* ====== Laptops & Desktops (993px - 1200px) ====== */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .hero-text button {
+    font-size: 1.3rem;
   }
 
   .imgcon img {
     max-width: 80%;
-    /* image responsive */
-    height: auto;
+  }
+   .serch {
+    width: 70%;
   }
 }
+
+/* ====== Large Screens (1201px+) ====== */
+@media (min-width: 1201px) {
+  .hero-text h1 {
+    font-size: 4.1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.9rem;
+  }
+
+  .hero-text button {
+    font-size: 1.4rem;
+    padding: 14px 26px;
+  }
+
+  .imgcon img {
+    max-width: 70%;
+  }
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
 
 
 /* ================== sections code start ===================== */
@@ -437,7 +541,7 @@ nav li a:hover {
 /* =========sections =============== */
 /* Section header */
 .projects {
-  padding: 60px 20px;
+  padding: 30px 10px;
   background: #f9fafc;
   text-align: center;
 }

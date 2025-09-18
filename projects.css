@@ -14,12 +14,17 @@
     width: 420px;
     /* chhota column */
     flex-shrink: 0;
-    background: #a3d3f7;
+    background: #001144;
     padding: 15px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     height: 100vh;
-    /* desktop me full height */
+    color: #ffff;
+}
+
+.filter p {
+    color: #ffff;
+
 }
 
 .projects-heading {
@@ -32,6 +37,7 @@
     box-sizing: border-box;
     scrollbar-width: none;
     -ms-overflow-style: none;
+
 }
 
 .projects-heading li {
@@ -46,17 +52,18 @@
     border-radius: 8px;
     font-size: 14px;
     transition: background 0.3s;
-    color: #4f5eff;
+    color: #000000;
     font-family: sans-serif;
 }
 
 .projects-heading li strong:hover {
-    color: rgb(1, 10, 113);
+    color: rgb(55, 98, 241);
+    text-decoration: underline;
 
 }
 
 .projects-heading ul li:hover strong {
-    background: #ddd;
+    background: #ebe6fa;
 }
 
 
@@ -95,7 +102,14 @@
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-.filter1{
+
+.filee_btn button {
+    font-size: 1rcm;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.filter1 {
     display: none;
 }
 
@@ -130,16 +144,27 @@
         background: none;
         display: none;
     }
-    .filter1{
+
+    .filter1 {
         display: block;
     }
-    .filee_btn button{
-       padding: 10px;
-       background-color: #4fb3ff;
-       font-weight: bold;
-       color: #fff;
-       border: none;
-       border-radius: 5px;
-       margin-bottom: 10px;
+
+    .filee_btn button {
+        padding: 10px;
+        background-color: #4fb3ff;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
     }
+}
+
+/* ====== Special Case: Phone in Desktop Mode (980px fake width) ====== */
+@media (min-width: 769px) and (max-width: 992px) and (max-device-width: 480px) {
+
+    .projectsMAN {
+        height: 54vh;
+    }
+
 }
