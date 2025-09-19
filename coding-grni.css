@@ -2,7 +2,7 @@
    Roadmap Section Base Styles
 =========================== */
 .sckils {
-    background: linear-gradient(rgb(9, 1, 116), rgb(248, 247, 254));
+    background: linear-gradient(rgb(239, 240, 253), rgb(248, 247, 254));
 }
 
 .roadmap-section {
@@ -34,6 +34,8 @@
 .skills-wrapper {
     max-height: 600px; /* scroll only when needed */
     overflow-y: auto;
+    background-color: #ffff;
+    padding: 20px;
 }
 
 .skills-wrapper::-webkit-scrollbar {
@@ -80,12 +82,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 8px;
     font-size: 18px;
     color: #fff;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    margin-right: 10px;
 }
 
 /* fallback if icon font renders large */
@@ -105,16 +108,14 @@
 
 .progress-bar {
     width: 100%;
-    height: 30px;
+    height: 20px;
     background: #c1c1d2;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .progress {
     height: 100%;
-    border-radius: 8px;
     transition: width 1s ease-in-out;
 }
 
@@ -233,7 +234,7 @@
     flex: 1;
     min-width: 280px;
     background: white;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
