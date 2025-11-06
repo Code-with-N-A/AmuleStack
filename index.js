@@ -59,15 +59,11 @@ primery.addEventListener('click', () => {
 });
 
 secendry.addEventListener('click', () => {
-  let pdfURL = "https://drive.google.com/file/d/1sL_AJ5LCdSTWcDXYcnL5ldHBS9Qjuzl0/view?usp=drive_link";
+  let pdfURL = "Certificate/Nitesh Amule .pdf";
 
-  let link = document.createElement("a");
-  link.href = pdfURL;
-  link.download = "Nitesh_Amule_resume";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-})
+  // PDF ko new tab me open karne ke liye
+  window.open(pdfURL, '_blank');
+});
 
 
 // ================== Explore =====================

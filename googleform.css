@@ -100,3 +100,45 @@
     padding: 14px 0;
   }
 }
+/* New form field styles */
+.googleForm-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.googleForm-input,
+.googleForm-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fafafa;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.googleForm-input:focus,
+.googleForm-textarea:focus {
+  border-color: #ff4d4d;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.3);
+}
+
+.googleForm-textarea {
+  resize: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .googleForm-input,
+  .googleForm-textarea {
+    font-size: 0.95rem;
+    padding: 12px 14px;
+  }
+}
